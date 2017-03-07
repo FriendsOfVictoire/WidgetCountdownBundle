@@ -1,0 +1,13 @@
+services:
+    victoire_core.widget_countdown_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: Countdown }
+
+    victoire.widget.countdown:
+        class: Victoire\Widget\CountdownBundle\Entity\WidgetCountdown
+
+    victoire.widget.form.countdown:
+        class: Victoire\Widget\CountdownBundle\Form\WidgetCountdownType
+        tags:
+            - { name: form.type }

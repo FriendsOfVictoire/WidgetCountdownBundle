@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        Countdown:
+            class: "Victoire\\Widget\\CountdownBundle\\Entity\\WidgetCountdown"
+            name: Countdown
+            cache: true
+jms_translation:
+    configs:
+        victoire_countdown_bundle:
+            dirs: ["@VictoireCountdownBundle"]
+            output_dir: "@VictoireCountdownBundle/Resources/translations"

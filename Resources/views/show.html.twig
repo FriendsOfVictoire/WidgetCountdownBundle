@@ -1,0 +1,8 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+    {% include '@bricks/countdown.html.twig' with {
+        'deadline': date|localizeddate('full', 'none', 'en')
+    } %}
+{# The parent display the content variable, you can do your custom display here #}
+{% endblock content %}

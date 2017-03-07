@@ -1,0 +1,22 @@
+{
+    "name": "friendsofvictoire/countdown-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire Countdown widget",
+    "keywords": [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "Countdown"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "~2.8|~3.0",
+        "victoire/victoire": "~1.5"    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\CountdownBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/CountdownBundle"
+}
