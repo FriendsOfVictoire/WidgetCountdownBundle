@@ -1,0 +1,34 @@
+<div id="clockdiv" class="countdown">
+    <div class="countdown__col">
+        <div class="countdown__period countdown__period--days">
+            <span class="countdown__period-time countdown__period-time--days"></span>
+            <span class="countdown__period-name">jours</span>
+        </div>
+    </div>
+
+    <div class="countdown__col">
+        <div class="countdown__period countdown__period--hours">
+            <span class="countdown__period-time countdown__period-time--hours"></span>
+            <span class="countdown__period-name">heures</span>
+        </div>
+    </div>
+
+
+    <div class="countdown__col">
+        <div class="countdown__period countdown__period--minutes">
+            <span class="countdown__period-time countdown__period-time--minutes"></span>
+            <span class="countdown__period-name">minutes</span>
+        </div>
+    </div>
+
+    <div class="countdown__col">
+        <div class="countdown__period countdown__period--seconds">
+            <span class="countdown__period-time countdown__period-time--seconds"></span>
+            <span class="countdown__period-name">secondes</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    initializeClock('clockdiv', '{{ deadline }}');
+</script>

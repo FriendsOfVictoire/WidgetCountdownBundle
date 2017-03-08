@@ -1,8 +1,11 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
+{% block script %}
+    <script src="{{ asset('bundles/victoirewidgetcountdown/javascript/countdown.js') }}"></script>
+{% endblock %}
+
 {% block content %}
-    {% include '@bricks/countdown.html.twig' with {
+    {% include '@VictoireWidgetCountdown/_quadrant.html.twig' with {
         'deadline': date|localizeddate('full', 'none', 'en')
     } %}
-{# The parent display the content variable, you can do your custom display here #}
 {% endblock content %}
